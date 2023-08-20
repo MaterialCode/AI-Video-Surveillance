@@ -28,7 +28,7 @@ function modelLoaded() {
 function draw() {
     if(status != "") {
         objectDetector.detect(video, gotResult)
-        for (i = 0; i < array.length; i++) {
+        for (i = 0; i < objects.length; i++) {
             document.getElementById("status").innerHTML = "Status: Objects Detected"
             document.getElementById("number_of_objects").innerHTML = "Number of objects detected are: " + objects.length
 
